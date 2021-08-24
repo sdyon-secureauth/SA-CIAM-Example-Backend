@@ -10,7 +10,7 @@
 #.env
 
 # yarn
-#yarn.lock
+yarn.lock
 
 # production
 /build
