@@ -7,7 +7,7 @@
 /coverage
 
 # env file
-.env
+#.env
 
 # yarn
 yarn.lock
