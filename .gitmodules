@@ -1,0 +1,3 @@
+[submodule "saidp-sdk-js"]
+	path = saidp-sdk-js
+	url = https://github.com/sdyon-secureauth/saidp-sdk-js
