@@ -2,17 +2,11 @@
 # testing
 coverage/
 
-# env file
-.env
-
 # yarn
 yarn.lock
 
 # bin
 bin/
-
-# production
-build/
 
 # misc
 .DS_Store
