@@ -2,8 +2,6 @@
 # testing
 coverage/
 
-# yarn
-yarn.lock
 
 # bin
 bin/
