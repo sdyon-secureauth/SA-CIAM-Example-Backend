@@ -18,11 +18,14 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use('/', express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 //app.use('/', indexRouter);
 //app.use('/users', usersRouter);
 app.use('/api', apiRouter);
+app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "public", "index.html"));
+  });
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
 
