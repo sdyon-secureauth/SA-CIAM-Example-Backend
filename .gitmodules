@@ -1,0 +1,6 @@
+[submodule "saidp-sdk-js"]
+	path = saidp-sdk-js
+	url = https://github.com/sdyon-secureauth/saidp-sdk-js
+[submodule "client"]
+	path = client
+	url = https://github.com/sdyon-secureauth/SA-CIAM-Example-Frontend-Build
