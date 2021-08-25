@@ -17,10 +17,10 @@
     "debug": "~2.6.9",
     "dotenv": "^10.0.0",
     "express": "~4.16.1",
+    "frontend": "file:frontend",
     "jwt-decode": "^3.1.2",
     "morgan": "~1.9.1",
     "qs": "^6.10.1",
-    "saidp-sdk-js": "file:saidp-sdk-js",
-    "frontend": "file:frontend"
+    "saidp-sdk-js": "file:saidp-sdk-js"
   }
 }
