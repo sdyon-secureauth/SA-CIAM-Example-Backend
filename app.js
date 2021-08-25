@@ -4,8 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-//var indexRouter = require('./routes/index');
-//var usersRouter = require('./routes/users');
+
 var apiRouter = require('./routes/api');
 
 var app = express();
@@ -20,13 +19,12 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-//app.use('/', indexRouter);
-//app.use('/users', usersRouter);
+// api defined first to not conflict with React below
 app.use('/api', apiRouter);
+
+// React requires path to go to index.html so that it can handle routes
 app.get("*", (req, res) => {
     res.sendFile(path.resolve(__dirname, "public", "index.html"));
   });
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
-
-//module.exports = app;

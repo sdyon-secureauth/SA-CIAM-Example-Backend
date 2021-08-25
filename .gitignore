@@ -1,19 +1,18 @@
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
 
 # testing
-/coverage
+coverage/
 
 # env file
-#.env
+.env
 
 # yarn
-#yarn.lock
+yarn.lock
+
+# bin
+bin/
 
 # production
-/build
+build/
 
 # misc
 .DS_Store
