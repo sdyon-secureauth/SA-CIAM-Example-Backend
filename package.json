@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "workspaces": [
-    "saidp-sdk-js"
+    "saidp-sdk-js",
+    "client"
   ],
   "scripts": {
     "start": "node app.js"
