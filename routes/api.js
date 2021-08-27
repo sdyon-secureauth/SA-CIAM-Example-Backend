@@ -158,7 +158,7 @@ router.get('/user/:id/devices', async function(req, res) {
 
     router.get('/delete/user/:id/devices/:idDevice', async function(req, res) { 
 
-        axios.get('/api/user/'+req.params.id+'/devices').then(result => {
+        axios.get(req.protocol+'://'+req.get('host')+'/api/user/'+req.params.id+'/devices').then(result => {
             const options = {
                 url: 'https://us-services.secureauth.com/oauth/v1/token?grant_type=client_credentials',
                 method: 'post',
